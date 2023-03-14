@@ -375,12 +375,25 @@ nav img{
     display: flex;
     justify-content: space-between;
 }
+.cuadros-amigos{
+    display: grid;
+    justify-content: space-between;
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px auto; */
 
+}
 .columna {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+}
+.subnav1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content:space-between;
 }
 
 .noticias{
@@ -391,6 +404,12 @@ nav img{
 }
 
 .cuenta{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.subnav{
     background-color: white;
     width: 100%;
     border-radius: 10px;
