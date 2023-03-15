@@ -74,6 +74,7 @@ input:focus, select:focus, select, input.form-control:focus {
     box-shadow: 5px 5px 40px;        
 }
 
+
 .login input{  
     margin-top: 20px;    
     width: 50%;
@@ -331,6 +332,7 @@ hr{
     position: sticky;
     top: 0;
 }
+
 .icons{
     display: flex;
     align-items: center;
@@ -614,3 +616,68 @@ nav img{
 }
 
 /* ACABA ESTILO DE LA PÁGINA DE LA RED SOCIAL */
+/* COMIENZAN MEDIA QUERYS */
+@media only screen and ( max-width: 375px ) {
+    .cabecera{
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .index{
+        justify-content: center;
+        }
+    .login{
+        width: 60%;
+        z-index: 1;
+    }
+    .imagen{
+        height:2%;
+        position: absolute;
+        z-index: -1;
+    }   
+    @keyframes animation1 {
+        0%   { left:10px; top:0px;}
+        25%  { left:70px; top:0px;}
+        100% { left:10px; top:0px;}
+    }
+    
+}
+@media only screen and ( max-width: 768px ) {
+    .titulo{
+        font-size: medium;
+    }
+
+    .nombreLogo{
+        font-size:small;
+    }
+
+    @keyframes animation1 {
+        0%   { left:-90px; top:0px;}
+        25%  { left:70px; top:0px;}
+        100% { left:-90px; top:0px;}
+    }
+
+    .nombreLogo::first-letter{
+        font-size:large;
+    }
+}
+@media only screen and ( max-width: 600px ) {
+    .titulo{
+        font-size:smaller;
+    }
+
+    .nombreLogo{
+        font-size:x-small;
+    }
+
+    @keyframes animation1 {
+        0%   { left:-20px; top:0px;}
+        25%  { left:30px; top:0px;}
+        100% { left:-20px; top:0px;}
+    }
+
+    .nombreLogo::first-letter{
+        font-size:medium;
+    }
+}
+/* TERMINAN MEDIA QUERYS */
