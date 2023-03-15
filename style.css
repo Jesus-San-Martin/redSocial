@@ -11,6 +11,19 @@ input:focus, select:focus, select, input.form-control:focus {
     outline:none !important;
 }
 
+.icons1 li:hover{
+    width: 400%;
+}
+
+.icons li:hover{
+    width: 400%;
+}
+
+.nombreLogo::first-letter{
+    color:darkgoldenrod;
+    font-size:x-large;
+}
+
 /* ESTILO DE LA PÁGINA DE LOGIN */
 
 /* Estilo del recuadro de incio de sesión y de mi perfil */
@@ -375,13 +388,16 @@ nav img{
     display: flex;
     justify-content: space-between;
 }
+/* cuadros-amigos-padre */
 .cuadros-amigos{
     display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
     justify-content: space-between;
-    /* grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px auto; */
-
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:repeat(20,1fr)
 }
+/* termina-cuadros-amigos-padre */
 .columna {
     display: flex;
     flex-direction: column;
@@ -402,6 +418,18 @@ nav img{
     border-radius: 10px;
     margin-top: 5px;
 }
+/* cuadro-noticias-pagina-amigos */
+.noticias1{    
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    grid-row-start: 1; 
+    grid-row-end: 6; 
+    grid-column-start: 1;
+    grid-column-end:1;
+}
+/* termina-cuadro-noticias-pagina-amigos */
 
 .cuenta{
     background-color: white;
@@ -409,12 +437,98 @@ nav img{
     border-radius: 10px;
     margin-top: 5px;
 }
-.subnav{
+/* cuenta-pagina-amigos */
+.cuenta1{
     background-color: white;
     width: 100%;
     border-radius: 10px;
     margin-top: 5px;
+    grid-row-start: 6; 
+    grid-row-end: 10; 
+    grid-column-start: 1;
+    grid-column-end:1;
 }
+/* termina-cuenta-pagina-amigos */
+/* cuadros-afecadas-por-grid */
+.subnav{
+    display: grid;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+.buscar-amigos{
+    display: grid;    
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    grid-row-start: 2; 
+    grid-row-end: 20; 
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+ /* termina-cuadros-afecadas-por-grid */
+
+ /* Estilo cuadro sugerencia de amigos */
+.buscar-amigos{
+    text-align: center;
+}
+.amigo-a{
+    background-color: white;
+    border-radius: 5%;
+    
+    /* margin: 200px; */
+    padding: 10px;
+    /* width: 30%; */
+    /* margin-top: 20px; */
+    /* box-shadow: 5px 5px 40px; */
+}
+
+/* .amigo-b{
+    background-color: white;
+    border-radius: 5%;
+    margin: 200px;
+    padding: 10px;
+    width: 30%;
+    margin-top: 20px;
+    box-shadow: 5px 5px 40px;
+} */
+
+.buscar-amigos img{
+    width: 50%;
+}
+
+.boton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    width: 50%;
+    background-color: #EC483F;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: large;
+}
+
+.boton:hover {
+    background-color: grey;
+    /* padding: 12px; */
+}    
+    
+.boton:active {
+    background-color: lightslategray;
+    /* padding: 14px; */
+}
+
+ /* Termina estilo cuadro sugerencia de amigos */
 
 .apartado{
     display: flex;
