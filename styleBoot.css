@@ -1,0 +1,15 @@
+.logo{
+    width: 30%;
+}
+.buscar{
+    width: 40%;
+}
+.menu{
+    width: 30%;
+}
+.celda{
+    border-radius: 10%;
+}
+.ajuste{
+    height:fit-content
+}
