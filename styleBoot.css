@@ -7,6 +7,12 @@
     width: 30%;
     display: inline-block;
 }
+.fLetter::first-letter{
+    color: green;
+    font-size:larger;
+    
+
+}
 .buscar{
     width: 40%;
 }
@@ -32,6 +38,10 @@ body{
 
 .correo {
     width: 97% !important;
+}
+.noLink{
+    color: inherit;
+    text-decoration:none ;
 }
 /* button{
     background-color: #267754;
