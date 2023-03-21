@@ -8,10 +8,9 @@
     display: inline-block;
 }
 .fLetter::first-letter{
-    color: green;
-    font-size:larger;
+    font-size: larger;
+    color: rgb(40, 167, 69)
     
-
 }
 .buscar{
     width: 40%;
@@ -43,9 +42,14 @@ body{
     color: inherit;
     text-decoration:none ;
 }
+.scroll {
+    max-height: 500px; /* o cualquier otra altura máxima deseada */
+    overflow-y: auto;
+}
 /* button{
     background-color: #267754;
 }
 button:hover{
     background-color: rgb(9, 139, 96)!important;
 } */
+
