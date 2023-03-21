@@ -2,7 +2,9 @@
     color: white;
 }
 
-
+h1{
+    color: rgb(9, 139, 96);
+}
 .logo{
     width: 30%;
     display: inline-block;
@@ -35,7 +37,12 @@ body{
 }
 /* button{
     background-color: #267754;
+} */
+
+.colorEnlace:hover{    
+    color: rgb(9, 139, 96)!important;
 }
+
 button:hover{
     background-color: rgb(9, 139, 96)!important;
-} */
+}
