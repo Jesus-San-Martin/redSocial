@@ -2,10 +2,17 @@
     color: white;
 }
 
-
+h1{
+    color: rgb(9, 139, 96);
+}
 .logo{
     width: 30%;
     display: inline-block;
+}
+.fLetter::first-letter{
+    font-size: larger;
+    color: rgb(9, 139, 96);
+    
 }
 .buscar{
     width: 40%;
@@ -33,9 +40,35 @@ body{
 .correo {
     width: 97% !important;
 }
-/* button{
-    background-color: #267754;
+.noLink{
+    color: inherit;
+    text-decoration:none ;
 }
+.scroll {
+    max-height: 500px; /* o cualquier otra altura máxima deseada */
+    overflow-y: auto;
+}
+.publicaciones {
+    width: 100%;
+    height: 600px;
+}
+.publicacionesIn {
+    width: 90%;
+    height: 540px;
+    overflow-y: auto;
+}
+.ajusteImg{
+    max-width: 100%;
+}
+.card-body{
+    max-height: 100px;
+    overflow-y: auto;
+} */
+
+.colorEnlace:hover{    
+    color: rgb(9, 139, 96)!important;
+}
+
 button:hover{
     background-color: rgb(9, 139, 96)!important;
-} */
+}
