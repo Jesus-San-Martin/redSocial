@@ -46,10 +46,20 @@ body{
     max-height: 500px; /* o cualquier otra altura máxima deseada */
     overflow-y: auto;
 }
-/* button{
-    background-color: #267754;
+.publicaciones {
+    width: 100%;
+    height: 600px;
 }
-button:hover{
-    background-color: rgb(9, 139, 96)!important;
-} */
+.publicacionesIn {
+    width: 90%;
+    height: 540px;
+    overflow-y: auto;
+}
+.ajusteImg{
+    max-width: 100%;
+}
+.card-body{
+    max-height: 100px;
+    overflow-y: auto;
+}
 
