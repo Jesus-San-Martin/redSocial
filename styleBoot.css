@@ -11,7 +11,7 @@ h1{
 }
 .fLetter::first-letter{
     font-size: larger;
-    color: rgb(40, 167, 69)
+    color: rgb(9, 139, 96);
     
 }
 .buscar{
