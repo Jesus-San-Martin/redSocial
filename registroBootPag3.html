@@ -11,102 +11,114 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark w-100">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="#">
-                <h1 class="logo">TECLABOOK</h1>
-            </a>
-            <form class="d-flex buscar" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav menu justify-content-end w-100">
-                    <a class="nav-link" href="#">
-                        <i class="bi bi-house lead p-4" style="font-size: 2rem"></i>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <i class="bi bi-bell lead p-4" style="font-size: 2rem"></i>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <i class="bi bi-gear lead p-4" style="font-size: 2rem"></i>
-                    </a>
+    <!---------------------------------------Barra de navegación superior---------------------------------------------->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <h2 class="fLetter">TECLABOOK</h2>
+                </a>
+                <form class="d-flex buscar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav menu justify-content-end w-100">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-house lead p-4" style="font-size: 2rem"></i>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bell lead p-4" style="font-size: 2rem"></i>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-gear lead p-4" style="font-size: 2rem"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </nav>
+    
+    <!-- main: para ajustar la caja a su posición con .containerFormulario en CSS -->
+    <main class="container containerFormulario bg-dark border border-success rounded mb-1 mt-3" style="opacity: 0.7">
+            
+        <div class="row text-center mt-4">
+            <h1>¿DÓNDE HAS TRABAJADO?</h1>
         </div>
-    </nav>
-
-<!-- main: para ajustar la caja a su posición junto con .container en CSS -->
-    <main class="container containerFormulario main text-success mb-1 mt-3 bg-transparent" style="opacity: 0.7">
-        <!-- Para darle color y borde de color a la caja: -->
-        <div class="bg-dark border border-success rounded">
-            <div class="row text-center mt-4">
-                <h1>REGISTRO</h1>
+    
+    <!-- Formulario de registro -->
+        <form action="#" class="row d-flex justify-content-center">
+            <section class="row">
+                <div class="col-lg-6 p-4">
+                    <label for="date">Último cargo</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" id="cargo1" name="cargo" aria-describedby="Cargo" placeholder="Por ejemplo: Tornero">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-4">
+                    <label for="date">Empresa</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <input type="text" class="form-control" id="empresa1" name="empresa" aria-describedby="Empresa" placeholder="Por ejemplo: Arcelor Mittal">
+                    </div>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-lg-6 p-4">
+                    <label for="date">Penúltimo cargo</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" id="cargo2" name="cargo" aria-describedby="Cargo" placeholder="Por ejemplo: Camarero">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-4">
+                    <label for="date">Empresa</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <input type="text" class="form-control" id="empresa2" name="empresa" aria-describedby="Empresa" placeholder="Por ejemplo: Hotel ABBA">
+                    </div>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-lg-6 p-4">
+                    <label for="date">Antepenúltimo cargo</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" id="cargo3" name="cargo" aria-describedby="Cargo" placeholder="Por ejemplo: Dependiente">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-4">
+                    <label for="date">Empresa</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <input type="text" class="form-control" id="empresa3" name="empresa" aria-describedby="Empresa" placeholder="Por ejemplo: El Corte Inglés">
+                    </div>
+                </div>
+            </section>
+        </form>       
+    
+    
+        
+            <div class="row d-flex justify-content-center mb-5">
+                <button type="submit" class="btn btn-outline-success w-50 mt-3">Crea tu cuenta</button>
             </div>
-
-        <!-- FORMULARIO DE REGISTRO -->
-            <form class="row d-flex justify-content-center mt-3">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                        <span class="input-group-text bg-success border-success" id="basic-addon1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Input group example" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                        <span class="input-group-text bg-success border-success" id="basic-addon1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Input group example" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                   
-                    
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination d-flex justify-content-center mt-5">
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">Siguiente</a></li>
-                        </ul>
-                    </nav>
-       
-                 
-                 
-                </div>
-
-            <!-- BOTÓN DE SUBMIT: CREAR CUENTA (PENDIENTE DE LINKEAR)-->
-                <button type="submit" class="btn btn-outline-success mt-4 mb-4 w-50">Crea tu cuenta</button>
-                <p class="mb-4 text-center">o regístrate con:</p>
-
-            <!-- BOTONES PARA REGISTRO CON OTRAS REDES SOCIALES -->
-                <div class="text-center mb-3">
-                    <button type="button" class="btn btn-outline-success btn-floating" data-mdb-ripple-color="dark">
-                        <i class="bi bi-facebook"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-success btn-floating" data-mdb-ripple-color="dark">
-                        <i class="bi bi-google"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-success btn-floating" data-mdb-ripple-color="dark">
-                        <i class="bi bi-twitter"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-success btn-floating" data-mdb-ripple-color="dark">
-                        <i class="bi bi-github"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-
+        
+    
+        
+    
     </main>
-
-    <footer></footer>
+    
+<footer></footer>
 </body>
 </html>

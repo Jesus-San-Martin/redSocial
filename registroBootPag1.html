@@ -11,10 +11,11 @@
 </head>
 
 <body>
+<!---------------------------------------Barra de navegación superior---------------------------------------------->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark w-100">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="#">
-                <h1 class="logo">TECLABOOK</h1>
+                <h2 class="fLetter">TECLABOOK</h2>
             </a>
             <form class="d-flex buscar" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
@@ -36,56 +37,140 @@
         </div>
     </nav>
 
-<!-- main: para ajustar la caja a su posición junto con .container en CSS -->
-    <main class="container containerFormulario main text-success mb-1 mt-3 bg-transparent" style="opacity: 0.7">
-        <!-- Para darle color y borde de color a la caja: -->
-        <div class="bg-dark border border-success rounded">
+<!-- main: para ajustar la caja a su posición con .containerFormulario en CSS -->
+    <main class="container containerFormulario bg-dark border border-success rounded mb-1 mt-3" style="opacity: 0.7">
+        
             <div class="row text-center mt-4">
                 <h1>REGISTRO</h1>
             </div>
 
-        <!-- FORMULARIO DE REGISTRO -->
-            <form class="row d-flex justify-content-center mt-3">
-                <div class="row">
-                    <div class="col-lg-6">
+        <!-- Formulario de registro -->
+            <form action="#" class="row d-flex justify-content-center">
+                <section class="row">
+                    <div class="col-lg-6 p-4">
                         <div class="input-group">
-                        <span class="input-group-text bg-success border-success" id="basic-addon1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Input group example" aria-describedby="basic-addon1">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombre" placeholder="Nombre">
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 p-4">
                         <div class="input-group">
-                        <span class="input-group-text bg-success border-success" id="basic-addon1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Input group example" aria-describedby="basic-addon1">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidos" placeholder="Apellidos">
                         </div>
                     </div>
-                   
-                    
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination d-flex justify-content-center mt-5">
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link text-success border-success" href="#">Siguiente</a></li>
-                        </ul>
-                    </nav>
-       
-                 
-                 
-                </div>
+                </section>
+
+                <section class="row">
+                    <div class="col-lg p-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-envelope-at"></i>
+                            </span>
+                            <input type="email" class="form-control" id="correoelectronico" name="correoelectronico" aria-describedby="correo electrónico" placeholder="Correo electrónico">
+                        </div>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-lg-6 p-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" aria-describedby="Contraseña" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" aria-describedby="Contraseña" placeholder="Repite contraseña">
+                        </div>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-lg-6 p-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-globe"></i>
+                            </span>
+                            
+                            <select class="form-select max-width-200px max-height-200px">
+                                <option value="">Selecciona un país de residencia</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="España">España</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="México">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="República Dominicana">República Dominicana</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                            <!-- <input type="text" class="form-control" id="pais" name="pais" aria-describedby="País de residencia" placeholder="País de residencia"> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-geo-alt"></i>
+                            </span>
+                            <input type="text" class="form-control" id="pais" name="pais" aria-describedby="Ciudad de residencia" placeholder="Ciudad de residencia">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row d-flex justify-content-center">
+                    <div class="col-lg-6 p-4 text-center">
+                        <label for="date">Fecha de nacimiento</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-calendar-event"></i>
+                            </span>
+                            <input type="date" class="form-control" id="fecha" name="fecha" aria-describedby="fecha de nacimiento">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4 text-center">
+                        <label for="imagen">Imagen de perfil</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-success border-success" id="basic-addon1">
+                                <i class="bi bi-image"></i>
+                            </span>
+                            <input type="file" class="form-control" id="imagen">
+                        </div>
+                    </div>
+                </section>
+            </form>       
+
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination d-flex justify-content-center mt-5">
+                <li class="page-item"><a class="page-link text-success border-success" href="registroBootPag1.html">1</a></li>
+                <li class="page-item"><a class="page-link text-success border-success" href="registroBootPag2.html">2</a></li>
+                <li class="page-item"><a class="page-link text-success border-success" href="registroBootPag3.html">3</a></li>
+                <li class="page-item"><a class="page-link text-success border-success" href="#">Siguiente</a></li>
+                </ul>
+            </nav>
 
             <!-- BOTÓN DE SUBMIT: CREAR CUENTA (PENDIENTE DE LINKEAR)-->
-                <button type="submit" class="btn btn-outline-success mt-4 mb-4 w-50">Crea tu cuenta</button>
-                <p class="mb-4 text-center">o regístrate con:</p>
+            <p class="mb-4 text-center">o regístrate con:</p>
 
             <!-- BOTONES PARA REGISTRO CON OTRAS REDES SOCIALES -->
                 <div class="text-center mb-3">
@@ -102,7 +187,7 @@
                         <i class="bi bi-github"></i>
                     </button>
                 </div>
-            </form>
+            
         </div>
 
     </main>
