@@ -34,7 +34,7 @@ body{
     width: 50%!important;
 }
 .noLink{
-    color: inherit;
+    color: rgb(9, 139, 96);
     text-decoration:none ;
 }
 .scroll {
@@ -53,7 +53,7 @@ body{
 .ajusteImg{
     max-width: 100%;
 }
-.card-body{
+/* .card-body{
     max-height: 100px;
     overflow-y: auto;
 } */
@@ -64,4 +64,23 @@ body{
 
 button:hover{
     background-color: rgb(9, 139, 96)!important;
+}
+
+.eliminar{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.eliminar:hover {
+    background-color: #f44336;
+}
+.fuente{
+    font-size:0.9rem;
 }
