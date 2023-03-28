@@ -8,21 +8,28 @@
 //     likes.textContent=contadorLikes
 // }
 
-let contadorLikes = 45;
+let contadorLikes;
 let haDadoLike = false;
 
-sumarLikes = (button) => {
-    likes = document.getElementById("likes");
-    likesCount = parseInt(likes.textContent);
+let likes = document.getElementById("likes");
+
+
+sumarLikes = () => {
+    contadorLikes = parseInt(likes.textContent);
+    
     if (!haDadoLike) {
-    contadorLikes += 1;
-    likes.textContent = contadorLikes;
-    button.classList.add("liked");
+        contadorLikes += 1;
+        likes.textContent = contadorLikes;
+        likes.classList.add("liked");
     } else {
-    contadorLikes -= 1;
-    likes.textContent = contadorLikes;
-    button.classList.remove("liked");
+        contadorLikes -= 1;
+        likes.textContent = contadorLikes;
+        likes.classList.remove("liked");
     }
     haDadoLike = !haDadoLike;
 };
 
+likes.addEventListener("click", sumarLikes);
+
+
+//BUSCAR TARGET EN DOCUMENTACIÓN
