@@ -40,36 +40,36 @@
     <main class="container-fluid mt-3 ">
         <div class="row justify-content-around bg-transparent" style="opacity: 0.7">
             <section class="col-lg-2">
-                <aside class="container bg-dark border border-success rounded ajuste">
+                <aside class="container-fluid bg-dark border border-success rounded ajuste">
                     <div class="row">
                         <nav class="navbar navbar-dark bg-dark w-100">
-                            <div class="container-fluid p-4">
-                                <a class="navbar-brand justify-content-between w-30" href="#">                
-                                    <i class="bi bi-newspaper p-4"></i>                
+                            <div class="row p-4">  
+                                <a class="navbar-brand" href="#">                
+                                    <i class="bi bi-newspaper p-2"></i>                
                                     Noticias
                                 </a>          
                             </div>
-                            <div class="container-fluid p-4">
+                            <div class="row p-4">
                                 <a class="navbar-brand" href="#">
-                                    <i class="bi bi-patch-check p-4"></i>
+                                    <i class="bi bi-patch-check p-2"></i>
                                     Medallas
                                 </a>
                             </div>
-                            <div class="container-fluid p-4">
+                            <div class="row p-4">
                                 <a class="navbar-brand" href="#">
-                                    <i class="bi bi-people p-4"></i>
+                                    <i class="bi bi-people p-2"></i>
                                     Grupos
                                 </a>
                             </div>
-                            <div class="container-fluid p-4">
+                            <div class="row p-4">
                                 <a class="navbar-brand" href="#">
-                                    <i class="bi bi-search lead p-4"></i>
+                                    <i class="bi bi-search lead p-2"></i>
                                     Explorar
                                 </a>
                             </div>
-                            <div class="container-fluid p-4">
+                            <div class="row p-4">
                                 <a class="navbar-brand" href="#">
-                                    <i class="bi bi-person-circle p-4"></i>
+                                    <i class="bi bi-person-circle p-2"></i>
                                     Perfil
                                 </a>
                             </div>
@@ -77,7 +77,7 @@
                     </div>
                 </aside>
 <!---------------------------------------Barra lateral izquierda de ajustes --------------------------------------->
-                <aside class="mt-2 bg-dark border border-success rounded ajuste">
+                <aside class="container mt-2 bg-dark border border-success rounded ajuste">
                     <nav class="navbar navbar-dark bg-dark w-100">
                         <div class="container-fluid p-4">
                             <a class="navbar-brand justify-content-between w-30" href="#">                
@@ -104,7 +104,7 @@
             <section class="col-lg-6 d-flex flex-wrap ajuste">
                 <div class="container-fluid bg-dark border border-success rounded mb-2">
                     <div class="row text-center">
-                        <h1><B>NUEVA PUBLICACION</B></h1>
+                        <h1 class="fLetter"><B>NUEVA PUBLICACION</B></h1>
                     </div>
                     <div class="row ">
                         <form id="publicacion-form">
@@ -117,13 +117,13 @@
                 </div>
                 <div class="container bg-dark border border-success rounded publicaciones">
                     <div class="row text-center">
-                        <h3>PUBLICACIONES</h3>
+                        <h3 class="fLetter">PUBLICACIONES</h3>
                     </div>
                     <div class="row">
                         <div class="container bg-light border-success rounded publicacionesIn p-2">
                             <div class="card bg-dark mt-2">
                                 <div class="card-header">
-                                <b>Nombre de usuario</b> 
+                                <b>Jesus San Martin</b> 
                                 </div>
                                 <div class="card-body">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nihil dolores minima cum numquam? Deserunt itaque provident earum facere. Quidem ducimus consequuntur vitae quibusdam commodi dolore adipisci distinctio sequi repudiandae.
@@ -131,11 +131,11 @@
                                 <div class="card-footer">
                                     <div class="row">
                                         <div class="col-9">
-                                            Fecha de publicación
+                                            27/03/2023
                                         </div>
                                         <div class="col-3">
-                                            <button type="button" class="btn btn-outline-success" onclick="sumarLikes()">
-                                                <i id="likes" class="fa fa-heart badge bg-success">0</i>
+                                            <button type="button" class="btn btn-outline-success" onclick=sumarLikes(this)>
+                                                <i id="likes" class="fa fa-heart badge bg-success">45</i>
                                             </button> 
                                         </div>
                                     </div>
@@ -143,170 +143,51 @@
                             </div>
                             <div class="card bg-dark mt-2">
                                 <div class="card-header">
-                                <b>Nombre de usuario</b> 
+                                <b>Sonia Bueno</b> 
                                 </div>
                                 <div class="card-body">
-                                Publicacion
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nihil dolores minima cum numquam? Deserunt itaque provident earum facere. Quidem ducimus consequuntur vitae quibusdam commodi dolore adipisci distinctio sequi repudiandae.
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
+                                        <div class="col-9">
+                                            26/03/2023
                                         </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-outline-success" onclick=sumarLikes(this)>
+                                                <i id="likes" class="fa fa-heart badge bg-success"> 10</i>
+                                            </button> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card bg-dark mt-2">
                                 <div class="card-header">
-                                <b>Nombre de usuario</b> 
+                                <b>David Montero</b> 
                                 </div>
                                 <div class="card-body">
-                                Publicacion
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nihil dolores minima cum numquam? Deserunt itaque provident earum facere. Quidem ducimus consequuntur vitae quibusdam commodi dolore adipisci distinctio sequi repudiandae.
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
+                                        <div class="col-9">
+                                            25/03/2023
                                         </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-outline-success" onclick=sumarLikes(this)>
+                                                <i id="likes" class="fa fa-heart badge bg-success">30</i>
+                                            </button> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Nombre de usuario</b> 
-                                </div>
-                                <div class="card-body">
-                                Publicacion
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            Fecha de publicación
-                                        </div>
-                                        <div class="col-4 btn">
-                                            <button type="submit" class="btn btn-outline-success w-100">like</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
             </section>
+            
 <!---------------------------------------Barra lateral derecha de sugerencias de amigos --------------------------------------->
             <aside class="col-lg-3 bg-dark border border-success rounded ajuste">
                 <div class="container-fluid text-center">
@@ -517,7 +398,7 @@
             </aside>
         </div>
     </main>
-    <script src="app.js"></script>
+    <script src="appSocial.js"></script>
 </body>
 
 
