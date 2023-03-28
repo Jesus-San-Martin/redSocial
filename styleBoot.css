@@ -33,9 +33,6 @@ body{
 .imagenCentrada {
     width: 50%!important;
 }
-.containerFormulario {
-    width: 50%;
-}
 .noLink{
     color: inherit;
     text-decoration:none ;
