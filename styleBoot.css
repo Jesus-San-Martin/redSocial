@@ -41,7 +41,7 @@ body{
     width: 97% !important;
 }
 .noLink{
-    color: inherit;
+    color: rgb(9, 139, 96);
     text-decoration:none ;
 }
 .scroll {
@@ -60,10 +60,10 @@ body{
 .ajusteImg{
     max-width: 100%;
 }
-.card-body{
+/* .card-body{
     max-height: 100px;
     overflow-y: auto;
-}
+} */
 
 .colorEnlace:hover{    
     color: rgb(9, 139, 96)!important;
@@ -87,4 +87,7 @@ button:hover{
 }
 .eliminar:hover {
     background-color: #f44336;
+}
+.fuente{
+    font-size:0.9rem;
 }
