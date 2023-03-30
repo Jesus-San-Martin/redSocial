@@ -14,11 +14,14 @@ publicacionForm.addEventListener('submit', (event) => {
         nuevaPublicacion.classList.add('mt-0');
     }
     nuevaPublicacion.innerHTML = `
-        <div class="card-body">
+        <div class="card-body mb-3">
             ${comentario}
-            <div class="d-flex justify-content-end align-items-center mt-3">
-                <button type="button" class="btn badge fa fa-heart me-2"><span> 0</span></button>
-                
+            <div class="d-flex justify-content-end align-items-center mt-3 me-3">
+                <button type="button" class="btn badge position-relative fa fa-heart">
+                    <span class="position-absolute top-0 start-100 translate-middle badge contador rounded-pill bg-secondary ">
+                        0
+                    </span>
+                </button>
             </div>
         </div>
     `;
@@ -29,7 +32,7 @@ publicacionForm.addEventListener('submit', (event) => {
     
     // Agregar evento click al botón de "Me gusta"
     const btnMeGusta = nuevaPublicacion.querySelector('.btn');
-    const contadorMeGusta = nuevaPublicacion.querySelector('.badge');
+    const contadorMeGusta = nuevaPublicacion.querySelector('.contador');
     let numMeGusta = 0;
     let haDadoMeGusta = false;
     btnMeGusta.addEventListener('click', () => {
