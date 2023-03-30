@@ -38,8 +38,8 @@
 <!---------------------------------------Barra lateral izquierda de Noticias --------------------------------------->
     <main class="container-fluid mt-3">
         <div class="row justify-content-around bg-transparent" style="opacity: 0.7">
-            <section class="col-lg-2">
-                <aside class="container-fluid bg-dark border border-success rounded ajuste">
+            <section class="col-lg-2 ajuste">
+                <aside class="container bg-dark border border-success rounded">
                     <div class="row">
                         <nav class="navbar navbar-dark d-flex justify-content-around bg-dark w-100">
                             <div class="row p-4">  
@@ -68,23 +68,36 @@
                             </div>
                             <div class="row p-4">
                                 <a class="navbar-brand" href="#">
-                                    <i class="bi bi-person-circle p-1"></i>
+                                    <i class="bi bi-person-circle p-2"></i>
                                     Perfil
                                 </a>
                             </div>
                             <div class="row p-4">
                                 <a class="navbar-brand" href="#">
-                                    <i class="bi bi-chat-left p-1"></i>
+                                    <i class="bi bi-chat-left p-2"></i>
                                     Chat
                                 </a>
                             </div>   
                         </nav>
                     </div>
                 </aside>
+<!---------------------------------------Barra lateral izquierda de buscar publicaciones --------------------------------------->
+                <div class="container bg-dark border border-success rounded mb-2">
+                    <form id="buscar-publicaciones-form">
+                        <div class="input-group mt-2 mb-2">
+                            <input type="text" class="form-control" id="usuario-busqueda-input" placeholder="Buscar publicaciones de un usuario...">
+                            <button type="submit" class="btn btn-outline-success">Buscar</button>
+                        </div>
+                    </form>
+                    <div class="container bg-light mb-3 rounded scroll">
+                        <!-- Aquí se mostrarán las publicaciones -->
+                    </div>
+                </div>
             </section>
+            
 <!---------------------------------------Zona central de publicaciones --------------------------------------->   
-            <section class="col-lg-6 d-flex flex-wrap ajuste">
-                <div class="container-fluid bg-dark border border-success rounded mb-2">
+            <!-- <section class="col-lg-6 d-flex flex-wrap ajuste">
+                <div class="container bg-dark border border-success rounded mb-2">
                     <div class="row text-center">
                         <h1 class="fLetter"><B>NUEVA PUBLICACION</B></h1>
                     </div>
@@ -116,296 +129,56 @@
                                             27/03/2023
                                         </div>
                                         <div class="col-3">
-                                            <button type="button" class="btn btn-outline-success" onclick=sumarLikes(this)>
-                                                <i id="likes" class="fa fa-heart badge bg-success"> 45</i>
+                                            <button type="button" class="btn">
+                                                <i id="likes" class="badge fa fa-heart "> 45</i>
                                             </button> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>Sonia Bueno</b> 
-                                </div>
-                                <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nihil dolores minima cum numquam? Deserunt itaque provident earum facere. Quidem ducimus consequuntur vitae quibusdam commodi dolore adipisci distinctio sequi repudiandae.
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            26/03/2023
-                                        </div>
-                                        <div class="col-3">
-                                            <button type="button" class="btn btn-outline-success" onclick=sumarLikes(this)>
-                                                <i id="likes" class="fa fa-heart badge bg-success"> 10</i>
-                                            </button> 
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section class="col-lg-6 d-flex flex-wrap ajuste">
+                <div class="container-fluid bg-dark border border-success rounded mb-2">
+                    <div class="row text-center mt-2">
+                        <h1 class="fLetter"><B>NUEVA PUBLICACION</B></h1>
+                    </div>
+                    <div class="row ">
+                        <form id="publicacion-form">
+                            <div class="mb-2">
+                                <textarea class="form-control text-align" rows="5" id="comment" name="text">Muestranos tu trabajo</textarea>
                             </div>
-                            <div class="card bg-dark mt-2">
-                                <div class="card-header">
-                                <b>David Montero</b> 
-                                </div>
-                                <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nihil dolores minima cum numquam? Deserunt itaque provident earum facere. Quidem ducimus consequuntur vitae quibusdam commodi dolore adipisci distinctio sequi repudiandae.
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            25/03/2023
-                                        </div>
-                                        <div class="col-3">
-                                            <button type="button" class="btn btn-outline-success" onclick=sumarLikes(this)>
-                                                <i id="likes" class="fa fa-heart badge bg-success">30</i>
-                                            </button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
+                            <button type="submit" class="btn btn-outline-success m-4">Publicar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container bg-dark border border-success rounded scroll">
+                    <div class="row text-center mt-3">
+                        <h3 class="fLetter">PUBLICACIONES</h3>
+                    </div>
+                    <div id="publicaciones-container" class="card mt-4 scroll">
+                        <div class="card-body">
+                            <!-- Aquí se mostrarán las publicaciones -->
                         </div>
                     </div>
                 </div>
             </section>
-            
 <!---------------------------------------Barra lateral derecha de sugerencias de amigos --------------------------------------->
-            <aside class="col-lg-3 bg-dark border border-success rounded ajuste">
-                <div class="container-fluid text-center">
-                    <h2 class="fLetter">TECLERS POR EL MUNDO</h2>
-                </div>
-                <div class="container bg-light mb-3 p-1 rounded scroll">
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <aside class="col-lg-3 ajuste">
+                <div class="container bg-dark border border-success rounded">
+                    <div class="container-fluid text-center">
+                        <h2 class="fLetter">TECLERS POR EL MUNDO</h2>
                     </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container bg-light mb-3 p-1 rounded scroll usersList">
+                            <!-- Aquí se mostrarán sugerencias de amigos -->
                     </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container bg-dark border border-success rounded mb-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="ratio ratio-1x1">
-                                <img src="img/perfil.png" class="img-fluid rounded ajusteImg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="row text-center">
-                                    <div class="col-12">
-                                        <p class="mb-0">David Montero</p>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="mb-0">5 amigos en común</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-6 btn-group p-1 mb-1">
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Aceptar</button>
-                                        <button type="submit" class="btn btn-outline-success w-100 fuente">Ignorar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>    
             </aside>
         </div>
     </main>
-    <script src="appSocial.js"></script>
+    <script src="appsocial.js"></script>
 </body>
 
 
