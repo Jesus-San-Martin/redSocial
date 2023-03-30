@@ -1,0 +1,14 @@
+.modal {
+    display: none;
+};
+
+a[href="#mensajeModal"]:target + .modal {
+    display: block;
+};
+
+.piepagina {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
