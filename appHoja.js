@@ -24,7 +24,7 @@ const eliminarDatosTarjetas = () => {
 
 // Función que redirige a la página principal
 const irInicio = () => {
-    window.open("indexBoot.html");
+    window.open("index.html");
 };
 
 // Función que borra la cuenta y llama a las funciones de eliminación de datos y redirección a la página principal
