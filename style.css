@@ -34,7 +34,7 @@ body{
     height:fit-content
 }
 
-/* Estilosde la barra de navegación y de los distintos títulos de la web */
+/* Estilos de la barra de navegación y de los distintos títulos de la web */
 .logo{
     width: 30%;
     display: inline-block;
@@ -42,7 +42,6 @@ body{
 .fLetter::first-letter{
     font-size: larger;
     color: rgb(9, 139, 96);
-    
 }
 .buscar{
     width: 45%;
@@ -51,28 +50,7 @@ body{
     width: 30%;
 }
 
-
-.imagenCentrada {
-    width: 50%!important;
-}
-
-
-.publicaciones {
-    width: 100%;
-    height: 600px;
-}
-.publicacionesIn {
-    width: 90%;
-    height: 540px;
-    overflow-y: auto;
-}
-
-
-
-button:hover{
-    background-color: rgb(9, 139, 96)!important;
-}
-
+/* Botón eliminar cuenta de la hoja de vida */
 .eliminar{
     background-color: #f44336;
     color: white;
@@ -85,12 +63,13 @@ button:hover{
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/* Estilos de archivos JavaScript */
 .fuente{
     font-size:0.9rem;
 }
 
 .limited-width {
-    /* max-width: 300px; */
     width: 100%;
 }
 

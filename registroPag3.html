@@ -15,17 +15,17 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark w-100">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="#">
-                <h2 class="fLetter">TECLABOOK</h2>
+                <h1 class="fLetter">TECLABOOK</h1>
             </a>            
         </div>
     </nav>
     
-    <!-- main: para ajustar la caja a su posición con .containerFormulario en CSS -->
+<!-------------------------------------------- Cuadro completo ---------------------------------------------------->
     <main class="container col-lg-6 bg-dark border border-success rounded mt-5" style="opacity: 0.7">
         <div class="row">
             <div class="row text-center mt-4">    
         <div class="row text-center mt-4">
-                <h2 class="fLetter">¿Dónde has trabajado?</h2>
+                <h1 class="fLetter">¿Dónde has trabajado?</h1>
             </div>
         
         <!-- Formulario de registro -->
@@ -37,7 +37,7 @@
                             <span class="input-group-text bg-success border-success" id="basic-addon1">
                                 <i class="bi bi-briefcase-fill"></i>
                             </span>
-                            <input type="text" class="form-control" id="cargo1" name="cargo" aria-describedby="Cargo" placeholder="Por ejemplo: Tornero">
+                            <input type="text" class="form-control" id="cargo1" name="cargo" aria-describedby="Cargo" placeholder="Ejemplo: Tornero">
                         </div>
                     </div>
                     <div class="col-lg-6 p-4">
@@ -46,7 +46,7 @@
                             <span class="input-group-text bg-success border-success" id="basic-addon1">
                                 <i class="bi bi-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="empresa1" name="empresa" aria-describedby="Empresa" placeholder="Por ejemplo: Arcelor Mittal">
+                            <input type="text" class="form-control" id="empresa1" name="empresa" aria-describedby="Empresa" placeholder="Ejemplo: Arcelor Mittal">
                         </div>
                     </div>
                 </section>
@@ -57,7 +57,7 @@
                             <span class="input-group-text bg-success border-success" id="basic-addon1">
                                 <i class="bi bi-briefcase-fill"></i>
                             </span>
-                            <input type="text" class="form-control" id="cargo2" name="cargo" aria-describedby="Cargo" placeholder="Por ejemplo: Camarero">
+                            <input type="text" class="form-control" id="cargo2" name="cargo" aria-describedby="Cargo" placeholder="Ejemplo: Camarero">
                         </div>
                     </div>
                     <div class="col-lg-6 p-4">
@@ -66,7 +66,7 @@
                             <span class="input-group-text bg-success border-success" id="basic-addon1">
                                 <i class="bi bi-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="empresa2" name="empresa" aria-describedby="Empresa" placeholder="Por ejemplo: Hotel ABBA">
+                            <input type="text" class="form-control" id="empresa2" name="empresa" aria-describedby="Empresa" placeholder="Ejemplo: Hotel ABBA">
                         </div>
                     </div>
                 </section>
@@ -77,7 +77,7 @@
                             <span class="input-group-text bg-success border-success" id="basic-addon1">
                                 <i class="bi bi-briefcase-fill"></i>
                             </span>
-                            <input type="text" class="form-control" id="cargo3" name="cargo" aria-describedby="Cargo" placeholder="Por ejemplo: Dependiente">
+                            <input type="text" class="form-control" id="cargo3" name="cargo" aria-describedby="Cargo" placeholder="Ejemplo: Dependiente">
                         </div>
                     </div>
                     <div class="col-lg-6 p-4">
@@ -86,17 +86,27 @@
                             <span class="input-group-text bg-success border-success" id="basic-addon1">
                                 <i class="bi bi-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="empresa3" name="empresa" aria-describedby="Empresa" placeholder="Por ejemplo: El Corte Inglés">
+                            <input type="text" class="form-control" id="empresa3" name="empresa" aria-describedby="Empresa" placeholder="Ejemplo: El Corte Inglés">
                         </div>
                     </div>
                 </section>
             </form>       
         </div>
+
+    <!-- Pasar a la siguiente/anterior página del formulario -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination d-flex justify-content-center mt-5">
+            <li class="page-item"><a class="page-link text-success border-success" href="registroPag2.html">Anterior</a></li>
+            <li class="page-item"><a class="page-link text-success border-success" href="registroPag1.html">1</a></li>
+            <li class="page-item"><a class="page-link text-success border-success" href="registroPag2.html">2</a></li>
+            <li class="page-item"><a class="page-link text-success border-success" href="registroPag3.html">3</a></li>
+            </ul>
+        </nav>
+
+    <!-- Botón para crear la cuenta -->
         <div class="row d-flex justify-content-center mb-5">
-            <button type="submit" class="btn btn-outline-success w-50 mt-3">Crea tu cuenta</button>
+            <button type="submit" class="btn btn-success w-50 mt-3">Crea tu cuenta</button>
         </div>
     </main>
-    
-<footer></footer>
 </body>
 </html>

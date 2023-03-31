@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark w-100">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="#">
-                <h2 class="fLetter">TECLABOOK</h2>
+                <h1 class="fLetter">TECLABOOK</h1>
             </a>                        
         </div>
     </nav>
@@ -22,15 +22,25 @@
     <main class="container col-lg-6 text-success mt-5 bg-transparent" style="opacity: 0.7">       
         <form class="bg-dark border border-success rounded text-center p-5 d-flex flex-column align-items-center">
             <div>
-                <div class="row text-center mb-4">
-                    <h2 class="fLetter">INICIO DE SESIÓN</h2>
+                <div class="row text-center mb-5">
+                    <h1 class="fLetter">INICIO DE SESIÓN</h1>
                 </div>
                 <div class="mb-3">            
-                    <input type="text" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="usuario">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                        <input type="email" class="form-control" id="usuario" name="usuario" aria-describedby="usuario" placeholder="Usuario">
+                    </div>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="mb-3">                
-                    <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success border-success" id="basic-addon1">
+                            <i class="bi bi-lock"></i>
+                        </span>
+                        <input type="password" class="form-control" id="contraseña" name="contraseña" aria-describedby="contraseña" placeholder="Contraseña">
+                    </div>               
                 </div>            
                 <button type="submit" class="btn btn-outline-success mt-3">Entrar</button>
                 <div class="form-text mt-3 cuenta">¿No tienes cuenta? Regístrate <a href="registroPag1.html" class="noLink">aquí</a></div>
