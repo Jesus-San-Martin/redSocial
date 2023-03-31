@@ -75,6 +75,11 @@ button:hover{
     font-size:0.9rem;
 }
 
+.tamaño{
+    width: 16rem; 
+    height: 24rem;
+}
+
 .limited-width {
     /* max-width: 300px; */
     width: 100%;

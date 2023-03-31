@@ -1,14 +1,45 @@
-.modal {
+.boton-mensaje {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .formulario-mensaje {
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
     display: none;
-};
-
-a[href="#mensajeModal"]:target + .modal {
-    display: block;
-};
-
-.piepagina {
+    width: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .cerrar-formulario {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .cerrar-formulario:hover {
+    color: #333;
+  }
+  Este CSS establece los estilos para el botón,
+  
+  
+  
+  
